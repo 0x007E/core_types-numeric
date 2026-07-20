@@ -29,8 +29,8 @@ jobs:
       - name: Prepare files for Doxygen
         run: |
           mkdir -p ./structure/core_types/numeric/
-          cp ./radix.h ./structure/core_types/numeric/
-          cp ./datatypes.h ./structure/core_types/numeric/
+          cp -r ./radix.h ./structure/core_types/numeric/
+          cp -r ./datatypes.h ./structure/core_types/numeric/
 
       - name: Setup Pages
         id: pages

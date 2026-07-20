@@ -23,7 +23,6 @@ jobs:
           mkdir -p ./${{ env.OUTPUT_FOLDER }}/core_types/numeric
           cp -r ./radix.h ./${{ env.OUTPUT_FOLDER }}/core_types/numeric/
           cp -r ./datatypes.h ./${{ env.OUTPUT_FOLDER }}/core_types/numeric/
-          cp -r ./LICENSE  ./${{ env.OUTPUT_FOLDER }}/LICENSE
           
       - name: Pack files for upload
         run: |
